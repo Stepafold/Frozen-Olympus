@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a2a1e4faf8e31b45b61474ab8be94d2
+guid: 0efc2a78a8db08544852799ba7f20f78
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,169 +97,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPELLL_0
+      name: bars_9
       rect:
         serializedVersion: 2
-        x: 17
-        y: 42
-        width: 21
-        height: 13
+        x: 32
+        y: 204
+        width: 5
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c9a94151b3a76549b25f5abb7c962e8
-      internalID: -692100401
+      spriteID: 10fecc831c4a8ae47b733cb2e57a7a1d
+      internalID: -599238479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPELLL_1
+      name: bars_10
       rect:
         serializedVersion: 2
-        x: 19
-        y: 12
-        width: 23
-        height: 9
+        x: 48
+        y: 204
+        width: 5
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43b9c283043336b4da7bee790471586b
-      internalID: 1438194981
+      spriteID: e562f2ba2f2eba0498754e18c95e4bc0
+      internalID: 411151957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPELLL_2
+      name: bars_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 42
-        width: 22
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 226
+        width: 100
+        height: 2
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3bd60dfec6605842aaa5604b4bc0b88
-      internalID: -2119928588
+      spriteID: c09952944c869544ca7469637a4fcb62
+      internalID: 882663523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPELLL_3
+      name: bars_1
       rect:
         serializedVersion: 2
-        x: 75
-        y: 8
-        width: 11
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 218
+        width: 100
+        height: 2
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d50da18cc0af4d34a828849fb3f5301c
-      internalID: 1548980420
+      spriteID: de01c5bafe908e64682659ec0de9999d
+      internalID: -745687976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPELLL_4
+      name: bars_2
       rect:
         serializedVersion: 2
-        x: 112
-        y: 43
-        width: 22
-        height: 13
+        x: 140
+        y: 215
+        width: 106
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5f62eeb96dd180438420e363c9aa608
-      internalID: -1256385969
+      spriteID: ba555725ac01978489c24b92d7cd8586
+      internalID: -216576104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPELLL_5
+      name: bars_3
       rect:
         serializedVersion: 2
-        x: 124
-        y: 7
-        width: 9
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 236
+        width: 100
+        height: 4
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1f736d993287014e96c0babdbf082a5
-      internalID: -2016146995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPELLL_6
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 11
-        width: 4
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40183338ac903284b9b14cec56d2bc3f
-      internalID: -1259557700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPELLL_7
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 43
-        width: 21
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7a5ffb464446354993710200bf01bd7
-      internalID: 538915177
+      spriteID: fdcaf6ffa6c387f47aaa937f32227cc7
+      internalID: 598720471
       vertices: []
       indices: 
       edges: []
@@ -275,14 +233,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPELLL_0: -692100401
-      SPELLL_1: 1438194981
-      SPELLL_2: -2119928588
-      SPELLL_3: 1548980420
-      SPELLL_4: -1256385969
-      SPELLL_5: -2016146995
-      SPELLL_6: -1259557700
-      SPELLL_7: 538915177
+      bars_0: 882663523
+      bars_1: -745687976
+      bars_10: 411151957
+      bars_2: -216576104
+      bars_3: 598720471
+      bars_4: -1445498286
+      bars_5: -608184968
+      bars_6: -1019748990
+      bars_7: 1669025702
+      bars_8: 1861204582
+      bars_9: -599238479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

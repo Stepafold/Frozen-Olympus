@@ -100,12 +100,12 @@ TextureImporter:
       name: skelDead_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 15
-        width: 32
-        height: 34
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: skelDead_1
       rect:
         serializedVersion: 2
-        x: 73
-        y: 15
-        width: 32
-        height: 33
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +142,12 @@ TextureImporter:
       name: skelDead_2
       rect:
         serializedVersion: 2
-        x: 137
-        y: 15
-        width: 31
-        height: 33
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: skelDead_3
       rect:
         serializedVersion: 2
-        x: 201
-        y: 15
-        width: 35
-        height: 33
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: skelDead_4
       rect:
         serializedVersion: 2
-        x: 265
-        y: 15
-        width: 37
-        height: 33
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: skelDead_5
       rect:
         serializedVersion: 2
-        x: 329
-        y: 15
-        width: 38
-        height: 33
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +226,12 @@ TextureImporter:
       name: skelDead_9
       rect:
         serializedVersion: 2
-        x: 521
-        y: 15
-        width: 42
-        height: 34
+        x: 576
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: skelDead_10
       rect:
         serializedVersion: 2
-        x: 585
-        y: 15
-        width: 42
-        height: 34
+        x: 640
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: skelDead_11
       rect:
         serializedVersion: 2
-        x: 649
-        y: 15
-        width: 42
-        height: 33
+        x: 704
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: skelDead_12
       rect:
         serializedVersion: 2
-        x: 713
-        y: 15
-        width: 42
-        height: 33
+        x: 768
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,64 +307,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelDead_14
+      name: skelDead_6
       rect:
         serializedVersion: 2
-        x: 393
-        y: 15
-        width: 42
-        height: 33
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 365bab8f550c6cb4e9017730865ff9b2
-      internalID: -1991389492
+      spriteID: f1864b3ae54843b48811bad1b4e5168b
+      internalID: -740500058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelDead_15
+      name: skelDead_7
       rect:
         serializedVersion: 2
-        x: 457
-        y: 15
-        width: 42
-        height: 34
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 122a839f25ce6d8408adb0f3b4e265f7
-      internalID: -1073877220
+      spriteID: f635ddd8a12b5394dbb081f562122b24
+      internalID: -1170890034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelDead_16
+      name: skelDead_8
       rect:
         serializedVersion: 2
-        x: 777
-        y: 15
-        width: 42
-        height: 33
+        x: 512
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98a8d3053613d4b46979deb95c62c91d
-      internalID: -843107795
+      spriteID: 71172a7c07e5ba94db2f4d11177048be
+      internalID: 781217741
       vertices: []
       indices: 
       edges: []
@@ -385,10 +385,6 @@ TextureImporter:
       skelDead_10: -1728515811
       skelDead_11: 876218840
       skelDead_12: 1022838392
-      skelDead_13: 344384762
-      skelDead_14: -1991389492
-      skelDead_15: -1073877220
-      skelDead_16: -843107795
       skelDead_2: 976973182
       skelDead_3: 1728836411
       skelDead_4: -115801674

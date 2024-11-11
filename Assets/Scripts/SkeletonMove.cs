@@ -11,7 +11,6 @@ public class Skeleton : MonoBehaviour
     public float speed;
     private bool facingRight = true;
     public Animator animator;
-    public Animator animatorPlayer;
     private bool isTakeDamage = false;
     private void Start()
     {
@@ -23,7 +22,7 @@ public class Skeleton : MonoBehaviour
         if (distanceBtwPlayer <= agroDistance && transform.position.x > player.position.x)
         {
             animator.SetBool("isAgro", true);
-            rb.velocity = new Vector2(-speed, 0f);
+            rb.velocity = new Vector2(-speed, rb.velocity.y);
             if (facingRight)
             {
                 Flip();
@@ -32,7 +31,7 @@ public class Skeleton : MonoBehaviour
         else if (distanceBtwPlayer <= agroDistance && transform.position.x < player.position.x)
         {
             animator.SetBool("isAgro", true);
-            rb.velocity = new Vector2(speed, 0f);
+            rb.velocity = new Vector2(speed, rb.velocity.y);
             if (!facingRight)
             {
                 Flip();
@@ -42,15 +41,15 @@ public class Skeleton : MonoBehaviour
         {
             animator.SetBool("isAgro", false);
         }
-        if (Mathf.Abs(transform.position.x - player.position.x) < 1 && animator.GetBool("isHealth") && !animator.GetBool("isPlayAttack"))
+        if (Mathf.Abs(transform.position.x - player.position.x) < 1 && !animator.GetBool("isPlayDead"))
         {
-            animator.Play("Skeleton_Attack");
+           animator.Play("Skeleton_Attack");
         }
         else
         {
             isTakeDamage = false;
         }
-        if (animator.GetBool("isPlayAttack") && animator.GetBool("isHealth"))
+        if (animator.GetBool("isPlayAttack"))
         {
             rb.velocity = Vector2.zero;
         }
