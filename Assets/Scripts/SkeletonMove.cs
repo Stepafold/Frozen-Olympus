@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class Skeleton : MonoBehaviour
@@ -11,7 +8,7 @@ public class Skeleton : MonoBehaviour
     public float speed;
     private bool facingRight = true;
     public Animator animator;
-    private bool isTakeDamage = false;
+    public Vector2 attackDistance;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,7 +16,7 @@ public class Skeleton : MonoBehaviour
     private void Update()
     {
         float distanceBtwPlayer = Vector2.Distance(transform.position, player.position);
-        if (distanceBtwPlayer <= agroDistance && transform.position.x > player.position.x)
+        if (distanceBtwPlayer <= agroDistance && transform.position.x > player.position.x && Mathf.Abs(transform.position.y - player.position.y) < attackDistance.y)
         {
             animator.SetBool("isAgro", true);
             rb.velocity = new Vector2(-speed, rb.velocity.y);
@@ -28,7 +25,7 @@ public class Skeleton : MonoBehaviour
                 Flip();
             }
         }
-        else if (distanceBtwPlayer <= agroDistance && transform.position.x < player.position.x)
+        else if (distanceBtwPlayer <= agroDistance && transform.position.x < player.position.x && Mathf.Abs(transform.position.y - player.position.y) < attackDistance.y)
         {
             animator.SetBool("isAgro", true);
             rb.velocity = new Vector2(speed, rb.velocity.y);
@@ -41,13 +38,9 @@ public class Skeleton : MonoBehaviour
         {
             animator.SetBool("isAgro", false);
         }
-        if (Mathf.Abs(transform.position.x - player.position.x) < 1 && !animator.GetBool("isPlayDead"))
+        if (Mathf.Abs(transform.position.x - player.position.x) < attackDistance.x && Mathf.Abs(transform.position.y - player.position.y) < attackDistance.y && !animator.GetBool("isPlayDead"))
         {
            animator.Play("Skeleton_Attack");
-        }
-        else
-        {
-            isTakeDamage = false;
         }
         if (animator.GetBool("isPlayAttack"))
         {

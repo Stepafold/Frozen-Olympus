@@ -159,6 +159,7 @@ MonoBehaviour:
   agroDistance: 9
   speed: 1
   animator: {fileID: 461269854}
+  attackDistance: {x: 0, y: 0}
 --- !u!114 &63646157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7239,8 +7240,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab396f79dd5d16c44840dc29f7d06659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 6
   jumpForce: 10
+  _dashingVelocity: 15
   feetpos: {fileID: 448956595}
   checkRadius: 0.3
   whatIsGrounded:

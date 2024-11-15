@@ -11,6 +11,14 @@ public class Gun : MonoBehaviour
     private float rotZ;
     public float startTimeBtwShots;
     public Movement playerMovement;
+
+    public GameObject mana;
+    public GameObject damagedMana;
+    public int howMuchManaDecrease;
+    public float duration;
+    public float damagedSpeed;
+    private float lastCallTime = 0f;
+    public float damagedDelay;
     void Update()
     {
         Vector2 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -46,21 +54,45 @@ public class Gun : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0f, 0f, -75f + offset);
             }
         }
-        if (timeBtwShots <= 0)
+        if (mana.transform.localScale.x > 0)
         {
-            if (Input.GetMouseButton(0))
+            if (timeBtwShots <= 0)
             {
-                Instantiate(bullet, shotPoint.position, Quaternion.identity);
-                timeBtwShots = startTimeBtwShots;
+                if (Input.GetMouseButton(0))
+                {
+                    lastCallTime = Time.time;
+                    mana.transform.localScale = new Vector2(mana.transform.localScale.x - howMuchManaDecrease, mana.transform.localScale.y);
+                    Instantiate(bullet, shotPoint.position, Quaternion.identity);
+                    timeBtwShots = startTimeBtwShots;
+                }
+            }
+            else
+            {
+                timeBtwShots -= Time.deltaTime;
             }
         }
-        else
+        if (Mathf.Abs(damagedMana.transform.localScale.x - mana.transform.localScale.x) > 0.01 && Time.time >= lastCallTime + damagedDelay)
         {
-            timeBtwShots -= Time.deltaTime;
+            StartCoroutine(ManaShrink());
+        }
+        else if (Mathf.Abs(damagedMana.transform.localScale.x - mana.transform.localScale.x) < 0.01)
+        {
+            StopAllCoroutines();
         }
     }
     public float getRotZ()
     {
         return rotZ;
+    }
+    IEnumerator ManaShrink()
+    {
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            damagedMana.transform.localScale = Vector2.Lerp(damagedMana.transform.localScale, mana.transform.localScale, elapsed / duration);
+            elapsed += Time.deltaTime * damagedSpeed;
+            yield return null;
+        }
+        damagedMana.transform.localScale = mana.transform.localScale;
     }
 }

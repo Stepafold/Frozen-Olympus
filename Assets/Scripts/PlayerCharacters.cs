@@ -1,7 +1,4 @@
-using JetBrains.Annotations;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerCharacters : MonoBehaviour
@@ -32,11 +29,14 @@ public class PlayerCharacters : MonoBehaviour
         {
             Destroy(hand);
         }
-        if (DamagedHP.transform.localScale != HP.transform.localScale && Time.time >= lastCallTime + damagedDelay)
+        if (Mathf.Abs(DamagedHP.transform.localScale.x - HP.transform.localScale.x)  > 0.01 && Time.time >= lastCallTime + damagedDelay)
         {
-            StartCoroutine(Shrink());
+            StartCoroutine(HPShrink());
         }
-        else StopAllCoroutines();
+        else if (Mathf.Abs(DamagedHP.transform.localScale.x) - Mathf.Abs(HP.transform.localScale.x) < 0.01)
+        {
+            StopAllCoroutines();
+        }
     }
     public void TakeDamage(int damage)
     {
@@ -57,7 +57,7 @@ public class PlayerCharacters : MonoBehaviour
             }
         }
     }
-    IEnumerator Shrink()
+    IEnumerator HPShrink()
     {
         float elapsed = 0f;
         while (elapsed < duration)
